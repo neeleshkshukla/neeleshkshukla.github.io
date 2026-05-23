@@ -448,6 +448,11 @@ html.theme-dark .pill--uspto { color: #ede9fe; }
 .timeline__role { font-size: 0.95rem; font-weight: 600; color: var(--heading); }
 .timeline__company { font-size: 0.85rem; color: var(--brand-accent); font-weight: 500; margin-bottom: 0.3rem; }
 .timeline__desc { font-size: 0.88rem; color: var(--text-light); line-height: 1.6; }
+.timeline__desc + .timeline__desc { margin-top: 0.4rem; }
+.timeline__list { margin: 0.4rem 0 0.3rem; padding-left: 1.2rem; font-size: 0.88rem; color: var(--text-light); line-height: 1.6; }
+.timeline__list li { margin-bottom: 0.3rem; }
+.timeline__skills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+.skill-tag { display: inline-block; font-size: 0.72rem; font-weight: 500; padding: 0.15rem 0.55rem; border-radius: 999px; background: var(--tag-bg, rgba(100,100,100,0.1)); color: var(--tag-color, var(--text-lighter)); }
 
 /* ===== EDUCATION ===== */
 .edu-item {
