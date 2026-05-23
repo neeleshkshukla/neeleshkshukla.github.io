@@ -3,657 +3,718 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neelesh K Shukla</title>
-    <meta name="description" content="Principal Applied Scientist at Oracle AI (OCI, Oracle) focused on GenAI, RAG, evaluation, and multilingual systems." />
+    <title>Neelesh K Shukla — Principal Applied Scientist | GenAI &amp; Agentic AI</title>
+    <meta name="description" content="Principal Applied Scientist at Oracle Generative AI. Building reliable enterprise-scale AI systems for reasoning, retrieval, NL2SQL, Agentic AI, SLMs, and next-gen GenAI learning from feedback without sycophancy." />
     <meta name="author" content="Neelesh K Shukla" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
-
-    <script>
-      (function() {
-        try {
-          var saved = localStorage.getItem('theme');
-          if (saved === 'dark') {
-            document.documentElement.classList.add('theme-dark');
-          } else if (!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.documentElement.classList.add('theme-dark');
-          }
-        } catch(e){}
-      })();
-    </script>
+    <link rel="icon" type="image/jpeg" href="neeleshpic.jpeg" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="grid-bg"></div>
 
-    <div class="masthead">
-      <div class="masthead__inner-wrap">
-        <nav class="greedy-nav">
-          <a class="site-title" href="#">Neelesh K Shukla</a>
-          <ul class="visible-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#patents">Patents</a></li>
-            <li><a href="#talks">Talks</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-          </ul>
-          <button class="search__toggle" type="button" aria-label="Search" onclick="document.querySelector('.search-content').classList.toggle('open'); setTimeout(function(){document.getElementById('search-input').focus()},100)">
-            <i class="fas fa-search"></i>
-          </button>
-          <button id="theme-toggle" type="button" aria-label="Switch theme">&#9790;</button>
-        </nav>
+    <nav class="nav">
+      <div class="nav__inner">
+        <a href="#hero" class="nav__logo">Neelesh K Shukla</a>
+        <div class="nav__links">
+          <a href="#bio">Bio</a>
+          <a href="#systems">Highlights</a>
+          <a href="#experience">Experience</a>
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#patents">Patents</a>
+          <a href="#talks">Talks</a>
+          <a href="#education">Education</a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+        </div>
       </div>
-    </div>
+    </nav>
 
-    <div class="page__hero">
-      <div class="wrapper">
-        <h1 class="page__title">Neelesh K Shukla</h1>
-        <p class="page__subtitle">Principal Applied Scientist | Applied Sciences Lead – GenAI &amp; Advanced AI @ Oracle | xHead - AI Research and Innovation - State Street | Research Fellow | IIT Guwahati (Rank 1)</p>
-      </div>
-    </div>
-
-    <div class="search-content">
-      <div class="search-content__inner-wrap">
-        <input type="search" id="search-input" placeholder="Search..." />
-        <div id="search-results"></div>
-      </div>
-      <button class="search-close" onclick="document.querySelector('.search-content').classList.remove('open')">Close</button>
-    </div>
-
-    <div id="main" role="main">
-      <div class="sidebar sticky">
-        <div itemscope itemtype="https://schema.org/Person">
-          <div class="author__avatar">
-            <img src="neeleshpic.jpeg" alt="Neelesh K Shukla" itemprop="image" />
-          </div>
-          <div class="author__content">
-            <h3 class="author__name" itemprop="name">Neelesh K Shukla</h3>
-            <div class="author__bio" itemprop="description">
-              <p>Principal Applied Scientist at Oracle AI (OCI, Oracle).</p>
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <i class="fas fa-brain hero-bg-icon"></i>
+        <div class="hero__inner">
+          <div class="hero__top">
+            <div class="hero__photo">
+              <img src="neeleshpic.jpeg" alt="Neelesh K Shukla" />
             </div>
           </div>
-          <div class="author__urls-wrapper">
-            <button class="btn btn--inverse" id="follow-btn">Follow</button>
-            <ul class="author__urls social-icons" id="follow-menu">
-              <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-                <i class="fas fa-fw fa-map-marker-alt"></i> <span itemprop="name">Bengaluru, India</span>
-              </li>
-              <li><a href="https://www.oracle.com/cloud/" rel="nofollow noopener noreferrer"><i class="fas fa-building"></i> Oracle Cloud Infrastructure</a></li>
-              <li><a href="mailto:neelesh.k.shukla@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
-              <li><a href="https://scholar.google.com/citations?user=MgafX3kAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
-              <li><a href="https://www.linkedin.com/in/neeleshshukla" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-              <li><a href="https://github.com/neeleshkshukla" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-              <li><a href="https://x.com/neeleshkshukla" target="_blank"><i class="fab fa-x-twitter"></i> X (Twitter)</a></li>
-            </ul>
+
+          <h1 class="hero__name">Neelesh K Shukla <a href="https://www.linkedin.com/in/neeleshshukla" target="_blank" class="hero__follow"><i class="fab fa-linkedin"></i> Follow</a></h1>
+          <p class="hero__title">Principal Applied Scientist | Applied Sciences Lead – GenAI &amp; Advanced AI @ Oracle | xHead - AI Research and Innovation - State Street | Research Fellow | IIT Guwahati (Rank 1)</p>
+          <p class="hero__tags">GenAI &middot; Agentic AI &middot; Reasoning &middot; NL2SQL &middot; SLMs &middot; Learning from Feedback</p>
+          <p class="hero__desc">Advancing next-generation GenAI through research and enterprise-scale AI systems for reasoning, retrieval, NL2SQL, agentic memory, and Agentic AI — with a focus on scalable SLMs, feedback-driven learning, grounded reasoning, and non-sycophantic alignment.</p>
+
+          <div class="hero__cta">
+            <a href="#systems" class="btn btn--primary">Explore highlights of work <i class="fas fa-arrow-right"></i></a>
+            <a href="#research" class="btn btn--ghost btn--console">Research Console <i class="fas fa-terminal"></i></a>
           </div>
         </div>
+      </section>
+
+      <!-- METRICS STRIP -->
+      <section class="metrics">
+        <div class="metrics__inner">
+          <div class="metric">
+            <span class="metric__value">15+</span>
+            <span class="metric__label">Years</span>
+          </div>
+          <div class="metric">
+            <span class="metric__value">11</span>
+            <span class="metric__label">Research Papers</span>
+          </div>
+          <div class="metric">
+            <span class="metric__value">9</span>
+            <span class="metric__label">Patents (4 granted)</span>
+          </div>
+          <div class="metric">
+            <span class="metric__value">#1</span>
+            <span class="metric__label">IITG Rank</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESEARCH CONSOLE -->
+      <section id="research" class="section">
+        <div class="section__inner">
+          <div class="console">
+            <div class="console__bar">
+              <span class="console__dot"></span>
+              <span class="console__dot"></span>
+              <span class="console__dot"></span>
+              <span class="console__title">research_console</span>
+            </div>
+            <div class="console__body">
+              <p><span class="console__prompt">$</span> <span class="console__cmd">cat</span> active_research_topics</p>
+              <div class="console__output">
+                <div class="topic">
+                  <span class="topic__tag topic__tag--reasoning">reasoning</span>
+                  <span>Enterprise reasoning architectures and knowledge grounding</span>
+                </div>
+                <div class="topic">
+                  <span class="topic__tag topic__tag--retrieval">retrieval</span>
+                  <span>Retrieval-augmented generation at scale</span>
+                </div>
+                <div class="topic">
+                  <span class="topic__tag topic__tag--nl2sql">nl2sql</span>
+                  <span>NL2SQL and structured data reasoning</span>
+                </div>
+                <div class="topic">
+                  <span class="topic__tag topic__tag--agentic">agentic</span>
+                  <span>Agentic AI memory, orchestration and autonomy</span>
+                </div>
+                <div class="topic">
+                  <span class="topic__tag topic__tag--slm">slm</span>
+                  <span>Small Language Models for enterprise efficiency</span>
+                </div>
+                <div class="topic">
+                  <span class="topic__tag topic__tag--feedback">feedback</span>
+                  <span>Learning from feedback without sycophancy</span>
+                </div>
+              </div>
+              <p><span class="console__prompt">$</span> <span class="console__cmd">echo</span> $CURRENT_FOCUS</p>
+              <p class="console__focus">Enterprise-grade GenAI grounded in reasoning, retrieval, NL2SQL, Agentic AI, SLMs, and learning from feedback — no sycophancy.</p>
+              <p><span class="console__prompt">$</span> <span class="console__cursor">_</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHORT BIO -->
+      <section id="bio" class="section">
+        <div class="section__inner">
+          <h2 class="section__title"><i class="fas fa-user"></i> Short Bio</h2>
+          <div class="bio">
+            <p>Neelesh K Shukla is a Principal Applied Scientist at Oracle Generative AI, specializing in Generative AI, NLP, LLMs, and intelligent enterprise AI systems. With over 15 years of experience spanning scientific research, applied AI, and large-scale production systems, he leads applied science and research initiatives focused on enterprise-scale AI architectures for reasoning, retrieval, NL2SQL, agentic AI, and evaluation-driven AI systems. His work emphasizes building reliable, scalable, and production-ready AI systems grounded in real-world deployment and scientific rigor.</p>
+            <p>Prior to Oracle, he led AI Research and Innovation initiatives at State Street, driving the adoption of Generative AI and advanced AI systems within the financial services domain. His research interests include Retrieval-Augmented Generation (RAG), agentic memory systems, multimodal AI, knowledge-centric architectures, and trustworthy non-sycophantic AI systems.</p>
+            <p>Neelesh holds an M.Tech in Computer Science and Engineering from IIT Guwahati, where he graduated Department Rank 1. He was also selected for the Government of India's prestigious international master's fellowship program associated with Heidelberg University, Germany.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED SYSTEMS -->
+      <section id="systems" class="section">
+        <div class="section__inner">
+          <h2 class="section__title"><i class="fas fa-cube"></i> Highlights</h2>
+          <div class="systems-grid">
+            <div class="sys-card">
+              <div class="sys-card__icon"><i class="fas fa-database"></i></div>
+              <h3 class="sys-card__title">Enterprise NL2SQL Orchestration</h3>
+              <p class="sys-card__desc">Semantic schema linking, ambiguity resolution, grounded generation, and production constraint handling for natural language to SQL at scale.</p>
+              <div class="sys-card__tags">
+                <span>Schema Linking</span>
+                <span>Grounding</span>
+                <span>Reasoning</span>
+              </div>
+            </div>
+
+            <div class="sys-card">
+              <div class="sys-card__icon"><i class="fas fa-search"></i></div>
+              <h3 class="sys-card__title">RAG Evaluation Framework</h3>
+              <p class="sys-card__desc">Retrieval diagnostics, grounding analysis, hallucination tracing, and enterprise-grade evaluation loops for production RAG systems.</p>
+              <div class="sys-card__tags">
+                <span>Retrieval</span>
+                <span>Evaluation</span>
+                <span>Safety</span>
+              </div>
+            </div>
+
+            <div class="sys-card">
+              <div class="sys-card__icon"><i class="fas fa-brain"></i></div>
+              <h3 class="sys-card__title">Agentic AI Systems</h3>
+              <p class="sys-card__desc">Conversation memory architectures, tool-use orchestration, multi-agent coordination, and autonomous reasoning for enterprise AI workflows.</p>
+              <div class="sys-card__tags">
+                <span>Agentic AI</span>
+                <span>Memory</span>
+                <span>Orchestration</span>
+              </div>
+            </div>
+
+            <div class="sys-card">
+              <div class="sys-card__icon"><i class="fas fa-file-alt"></i></div>
+              <h3 class="sys-card__title">Document Intelligence Pipeline</h3>
+              <p class="sys-card__desc">Multimodal document understanding, PDF parsing, layout analysis, and cross-lingual extraction for complex business documents.</p>
+              <div class="sys-card__tags">
+                <span>Multimodal</span>
+                <span>PDF</span>
+                <span>NLP</span>
+              </div>
+            </div>
+
+            <div class="sys-card">
+              <div class="sys-card__icon"><i class="fas fa-microchip"></i></div>
+              <h3 class="sys-card__title">Small Language Model Architecture</h3>
+              <p class="sys-card__desc">Efficient SLM design for enterprise deployment: distillation, quantization, pruning, and task-specific fine-tuning with minimal compute footprint.</p>
+              <div class="sys-card__tags">
+                <span>SLMs</span>
+                <span>Distillation</span>
+                <span>Efficiency</span>
+              </div>
+            </div>
+
+            <div class="sys-card">
+              <div class="sys-card__icon"><i class="fas fa-rotate"></i></div>
+              <h3 class="sys-card__title">Learning from Feedback &amp; Alignment</h3>
+              <p class="sys-card__desc">RLHF, preference optimization, reward modeling, and anti-sycophancy techniques for next-gen GenAI that learns reliably from human feedback.</p>
+              <div class="sys-card__tags">
+                <span>RLHF</span>
+                <span>Alignment</span>
+                <span>No Sycophancy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="section__inner">
+          <h2 class="section__title"><i class="fas fa-briefcase"></i> Experience</h2>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-item__dot"></div>
+              <div class="tl-item__body">
+                <div class="tl-item__meta">
+                  <span class="tl-item__date">Jun 2018 – Present</span>
+                  <span class="tl-item__company">Oracle</span>
+                </div>
+                <h3 class="tl-item__role">Principal Applied Scientist / Applied Sciences Lead — GenAI &amp; Advanced AI</h3>
+                <p class="tl-item__desc">Leads applied science for GenAI and Advanced AI products at Oracle. Drives enterprise-grade AI systems grounded in retrieval, reasoning, orchestration, and rigorous evaluation. Earlier built Automated ML platform and owned IoT Analytics offerings.</p>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-item__dot"></div>
+              <div class="tl-item__body">
+                <div class="tl-item__meta">
+                  <span class="tl-item__date">Oct 2021 – Jun 2024</span>
+                  <span class="tl-item__company">State Street</span>
+                </div>
+                <h3 class="tl-item__role">Senior Manager, AI Group &amp; Head — AI Innovation &amp; Research</h3>
+                <p class="tl-item__desc">Incubated and led AI Research &amp; Innovation, driving NLP and GenAI research for financial applications. Published 4 papers in 2 years. Led GenAI adoption in the Alpha Data Platform for investment management.</p>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-item__dot"></div>
+              <div class="tl-item__body">
+                <div class="tl-item__meta">
+                  <span class="tl-item__date">Jun 2018 – Oct 2021</span>
+                  <span class="tl-item__company">Oracle</span>
+                </div>
+                <h3 class="tl-item__role">Senior Data Scientist (SMTS)</h3>
+                <p class="tl-item__desc">Built Automated ML platform, owned IoT Analytics (predictive analytics, anomaly detection), initiated research collaborations with Oracle Labs. Built end-to-end ML pipelines on Spark/Big Data.</p>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-item__dot"></div>
+              <div class="tl-item__body">
+                <div class="tl-item__meta">
+                  <span class="tl-item__date">Jan 2018 – Mar 2018</span>
+                  <span class="tl-item__company">Heidelberg University</span>
+                </div>
+                <h3 class="tl-item__role">Visiting Research Fellow — PVS Lab</h3>
+                <p class="tl-item__desc">Govt of India Masters' Fellowship. Worked with Prof. Artur Andrzejak on code snippet extraction at Parallel and Distributed Systems Group.</p>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-item__dot"></div>
+              <div class="tl-item__body">
+                <div class="tl-item__meta">
+                  <span class="tl-item__date">May 2017 – Jul 2017</span>
+                  <span class="tl-item__company">IBM Research</span>
+                </div>
+                <h3 class="tl-item__role">Research Intern — Watson Data Platform</h3>
+                <p class="tl-item__desc">Enhanced Watson Data Platform with cognitive support features. Developed Shaping Function and Next Action Recommendation using deep learning and data mining.</p>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-item__dot"></div>
+              <div class="tl-item__body">
+                <div class="tl-item__meta">
+                  <span class="tl-item__date">Oct 2014 – Jul 2016</span>
+                  <span class="tl-item__company">Landis+Gyr (Toshiba Group)</span>
+                </div>
+                <h3 class="tl-item__role">Senior Software Engineer — IoT Energy Management</h3>
+                <p class="tl-item__desc">Built IoT-based Intelligent Energy management product. Owned text search, load forecasting ML, and application backend. Led team of 6.</p>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-item__dot"></div>
+              <div class="tl-item__body">
+                <div class="tl-item__meta">
+                  <span class="tl-item__date">Jun 2012 – Oct 2014</span>
+                  <span class="tl-item__company">DXC Technology</span>
+                </div>
+                <h3 class="tl-item__role">Product Developer — Banking Product</h3>
+                <p class="tl-item__desc">Engineered middleware layer for Accounts and Cards modules of Celeriti Banking Product.</p>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-item__dot"></div>
+              <div class="tl-item__body">
+                <div class="tl-item__meta">
+                  <span class="tl-item__date">Dec 2009 – Jun 2012</span>
+                  <span class="tl-item__company">Tata Consultancy Services</span>
+                </div>
+                <h3 class="tl-item__role">Systems Engineer</h3>
+                <p class="tl-item__desc">Led middleware development for Global Procurement, Employee Performance, and Recruitment systems. Managed 7-member team. Architected Vendor Management System.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="section">
+        <div class="section__inner">
+          <h2 class="section__title"><i class="fas fa-scroll"></i> Publications</h2>
+          <div class="pub-list">
+            <div class="pub-item">
+              <span class="pub-item__year">'25</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">IndRegBias: A Dataset for Studying Indian Regional Biases in English and Code-Mixed Social Media Comments</span>
+                <span class="pub-item__authors">Debadutta Panda, Aiswarya Anil, <strong>Neelesh K. Shukla</strong></span>
+                <span class="pub-item__venue">arXiv preprint arXiv:2601.06477</span>
+                <div class="pub-item__links">
+                  <a href="https://arxiv.org/abs/2601.06477" target="_blank">arXiv</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'25</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">Ontology-Driven Multimodal Framework for Automated Interpretation of Architecture Diagrams</span>
+                <span class="pub-item__authors">Sakthivel Thangaraj, <strong>Neelesh K. Shukla</strong>, Viji Krishnamurthy</span>
+                <span class="pub-item__venue">IEEE Big Data 2025</span>
+                <div class="pub-item__links">
+                  <a href="https://ieeexplore.ieee.org/document/11402186" target="_blank">IEEE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'25</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">RAG-CUE: Actionable and Unified Evaluation for Retrieval-Augmented Generation Systems</span>
+                <span class="pub-item__authors">Prabhat Kumar Prabhakar, <strong>Neelesh K. Shukla</strong>, Viji Krishnamurthy</span>
+                <span class="pub-item__venue">IEEE Big Data 2025</span>
+                <div class="pub-item__links">
+                  <a href="https://ieeexplore.ieee.org/abstract/document/11401780" target="_blank">IEEE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'25</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">GraphRAG Analysis for Financial Narrative Summarization</span>
+                <span class="pub-item__authors"><strong>Neelesh Kumar Shukla</strong>, Prabhat Prabhakar, Sakthivel Thangaraj et al.</span>
+                <span class="pub-item__venue">FinNLP/FNP @ ACL 2025</span>
+                <div class="pub-item__links">
+                  <a href="https://aclanthology.org/2025.finnlp-1.2/" target="_blank">ACL</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'25</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">KULFi: Knowledge Utilization for Optimizing LLMs for Financial Causal Reasoning</span>
+                <span class="pub-item__authors"><strong>Neelesh Kumar Shukla</strong>, Sandeep Singh, Prabhat Kumar Prabhakar et al.</span>
+                <span class="pub-item__venue">FinNLP/FNP @ ACL 2025</span>
+                <div class="pub-item__links">
+                  <a href="https://aclanthology.org/2025.finnlp-1.22/" target="_blank">ACL</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'24</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">T2I-RISE: Text-to-Insights with Reinforcement Learning, Semantic Layers and Enrichment</span>
+                <span class="pub-item__authors">Raghu Katikeri, Sai Phaniraja, et al.</span>
+                <span class="pub-item__venue">IEEE Big Data 2024</span>
+                <div class="pub-item__links">
+                  <a href="https://ieeexplore.ieee.org/document/10825844" target="_blank">IEEE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'23</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">Investigating LLMs for Financial Causality Detection in Multilingual Setup</span>
+                <span class="pub-item__authors"><strong>Neelesh K. Shukla</strong>, Raghu Katikeri, Msp Raja et al.</span>
+                <span class="pub-item__venue">IEEE Big Data 2023</span>
+                <div class="pub-item__links">
+                  <a href="https://ieeexplore.ieee.org/document/10386558" target="_blank">IEEE</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'23</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">Generative AI Approach to Distributed Summarization of Financial Narratives</span>
+                <span class="pub-item__authors"><strong>Neelesh K. Shukla</strong>, Raghu Katikeri, Msp Raja et al.</span>
+                <span class="pub-item__venue">IEEE Big Data 2023</span>
+                <div class="pub-item__links">
+                  <a href="https://doi.org/10.1109/BigData59044.2023.10386797" target="_blank">DOI</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'22</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">DoSA: Accelerating Annotations on Business Documents with Human-in-the-Loop</span>
+                <span class="pub-item__authors"><strong>Neelesh K. Shukla</strong>, Msp Raja, Raghu Katikeri, Amit Vaid</span>
+                <span class="pub-item__venue">ACL DASH 2022</span>
+                <div class="pub-item__links">
+                  <a href="https://aclanthology.org/2022.dash-1.4/" target="_blank">ACL</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'22</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">DiMSum: Distributed and Multilingual Summarization of Financial Narratives</span>
+                <span class="pub-item__authors"><strong>Neelesh K. Shukla</strong>, Amit Vaid, Raghu C Katikeri et al.</span>
+                <span class="pub-item__venue">FNP 2022</span>
+                <div class="pub-item__links">
+                  <a href="https://aclanthology.org/2022.fnp-1.9/" target="_blank">ACL</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'20</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">Improving Text-Code Pair Quality Using Function Calls and API Documentation</span>
+                <span class="pub-item__authors"><strong>Neelesh K. Shukla</strong> et al.</span>
+                <span class="pub-item__venue">MSR 2020 (Short Paper)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-footer">
+            <a href="https://scholar.google.com/citations?user=MgafX3kAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+            <a href="https://dblp.org/pid/333/1143" target="_blank"><i class="fas fa-database"></i> DBLP</a>
+            <a href="https://aclanthology.org/people/neelesh-kumar-shukla/" target="_blank"><i class="fas fa-book"></i> ACL Anthology</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PATENTS -->
+      <section id="patents" class="section">
+        <div class="section__inner">
+          <h2 class="section__title"><i class="fas fa-crown"></i> Patents</h2>
+          <div class="pub-list">
+            <div class="pub-item">
+              <span class="pub-item__year">'25</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">Staggered-Sampling for Detecting Sensor Anomalies in Univariate Time-Series</span>
+                <span class="pub-item__authors"><strong>Neelesh K. Shukla</strong>, Suresh Kumar Golconda, Vijayalakshmi Krishnamurthy et al.</span>
+                <span class="pub-item__venue">US Patent 12,260,304 &middot; Oracle</span>
+                <div class="pub-item__links">
+                  <a href="https://patents.justia.com/patent/12260304" target="_blank">USPTO</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'24</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">Hyper Parameter Tuning for Machine Learning Models</span>
+                <span class="pub-item__authors"><strong>Neelesh K. Shukla</strong>, Suresh Kumar Golconda, Vijayalakshmi Krishnamurthy et al.</span>
+                <span class="pub-item__venue">US Patent 12,086,725 &middot; Oracle</span>
+                <div class="pub-item__links">
+                  <a href="https://patents.justia.com/patent/12086725" target="_blank">USPTO</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'24</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">Automated Correlation Analysis and Self-Regulation of Attributes</span>
+                <span class="pub-item__authors">S Mahishi, Suresh Kumar Golconda, V Mani, K Gontla, <strong>Neelesh K. Shukla</strong>, A Vaid</span>
+                <span class="pub-item__venue">US Patent 20240330400 &middot; Oracle</span>
+                <div class="pub-item__links">
+                  <a href="https://patents.justia.com/patent/20240330400" target="_blank">USPTO</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'20</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">Generating a Recommended Shaping Function to Integrate Data Within a Data Repository</span>
+                <span class="pub-item__authors">M Bhide, S Gudla, S Mehta, P Rateria, S Shaikh, <strong>NK Shukla</strong>, PS Taylor</span>
+                <span class="pub-item__venue">US Patent 10,783,161 &middot; Oracle</span>
+                <div class="pub-item__links">
+                  <a href="https://patents.justia.com/patent/10783161" target="_blank">USPTO</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TALKS -->
+      <section id="talks" class="section">
+        <div class="section__inner">
+          <h2 class="section__title"><i class="fas fa-microphone"></i> Talks</h2>
+          <div class="pub-list">
+            <div class="pub-item">
+              <span class="pub-item__year">'24</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">Investigation of LLMs for Financial Use Cases</span>
+                <span class="pub-item__venue">NLP Summit 2024</span>
+                <div class="pub-item__links">
+                  <a href="https://www.nlpsummit.org/investigation-of-llms-for-financial-use-cases/" target="_blank">Talk Page</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pub-item">
+              <span class="pub-item__year">'22</span>
+              <div class="pub-item__content">
+                <span class="pub-item__title">Challenges in Financial Document Understanding — NLP and Beyond</span>
+                <span class="pub-item__venue">NLP Summit 2022</span>
+                <div class="pub-item__links">
+                  <a href="https://www.nlpsummit.org/challenges-in-financial-document-understanding-nlp-and-beyond/" target="_blank">Talk Page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION + HONORS -->
+      <section id="education" class="section">
+        <div class="section__inner">
+          <h2 class="section__title"><i class="fas fa-graduation-cap"></i> Education &amp; Honors</h2>
+          <div class="edu-grid">
+            <div class="edu-card">
+              <div class="edu-card__icon"><i class="fas fa-university"></i></div>
+              <h3>M.Tech Computer Science &amp; Engineering</h3>
+              <p class="edu-card__school">IIT Guwahati</p>
+              <p class="edu-card__detail">Department Rank 1 &middot; CGPA 9.7/10<br/>Thesis: Entity Role Detection in Attack Events</p>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-card__icon"><i class="fas fa-globe"></i></div>
+              <h3>Research Fellowship</h3>
+              <p class="edu-card__school">Heidelberg University, Germany</p>
+              <p class="edu-card__detail">Govt of India Masters' Fellowship<br/>PVS Lab &middot; Prof. Artur Andrzejak</p>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-card__icon"><i class="fas fa-trophy"></i></div>
+              <h3>B.Tech Computer Science</h3>
+              <p class="edu-card__school">MMM Engineering College</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HONORS -->
+      <section id="honors" class="section">
+        <div class="section__inner">
+          <h2 class="section__title"><i class="fas fa-award"></i> Awards</h2>
+          <div class="awards-grid">
+            <div class="award-card">
+              <span class="award-card__year">2023</span>
+              <span class="award-card__title">Best Work — Financial Narrative Summarization Task</span>
+              <span class="award-card__org">IEEE BigData Conference</span>
+            </div>
+            <div class="award-card">
+              <span class="award-card__year">2022</span>
+              <span class="award-card__title">Standing Ovation — Top Employee Award</span>
+              <span class="award-card__org">State Street</span>
+            </div>
+            <div class="award-card">
+              <span class="award-card__year">2022</span>
+              <span class="award-card__title">2nd Best Work — Financial Narrative Summarization</span>
+              <span class="award-card__org">LREC 2022 &middot; 1st in Greek</span>
+            </div>
+            <div class="award-card">
+              <span class="award-card__year">2018</span>
+              <span class="award-card__title">Joint Ph.D. Position Offer</span>
+              <span class="award-card__org">IIT Guwahati &middot; Heidelberg University, Germany</span>
+            </div>
+            <div class="award-card">
+              <span class="award-card__year">2018</span>
+              <span class="award-card__title">Rank 1 — M.Tech Computer Science &amp; Engineering</span>
+              <span class="award-card__org">IIT Guwahati (CGPA 9.7/10)</span>
+            </div>
+            <div class="award-card">
+              <span class="award-card__year">2018</span>
+              <span class="award-card__title">Joint Research Fellowship</span>
+              <span class="award-card__org">Govt of India &middot; Heidelberg University</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__links">
+          <a href="https://github.com/neeleshkshukla" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/neeleshshukla" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/neeleshkshukla" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <p class="footer__copy">&copy; 2026 Neelesh K Shukla &middot; Updated <span id="updateDate"></span></p>
       </div>
-
-      <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-        <meta itemprop="headline" content="About me" />
-        <div class="page__inner-wrap">
-          <section class="page__content" itemprop="text">
-            <section id="about">
-              <h2><i class="fas fa-user"></i> About Me</h2>
-
-              <p><strong>Neelesh K Shukla</strong> is a <strong>Principal Applied Scientist</strong> at <strong>Oracle Generative AI</strong>, specializing in Generative AI, Natural Language Processing (NLP), Large Language Models (LLMs), and intelligent enterprise AI systems. With over 14 years of experience spanning scientific research, applied AI, and large-scale production systems, his work focuses on advancing the intersection of AI innovation and enterprise-scale deployment.</p>
-
-              <p>At Oracle, he leads applied science initiatives for Generative AI and Advanced AI products, driving the development of enterprise-grade AI systems grounded in retrieval, reasoning, orchestration, and rigorous evaluation methodologies. His work emphasizes building reliable, scalable, and production-ready AI architectures capable of operating effectively under real-world complexity, scale, and business constraints.</p>
-
-              <p>Over the course of his career, Neelesh has led and contributed to initiatives involving Retrieval-Augmented Generation (RAG), NL2SQL systems, semantic retrieval architectures, multilingual and multimodal AI, document intelligence, and agentic AI systems. His research interests extend to evaluation-first AI engineering, knowledge-centric AI architectures, conversation memory systems, and robust AI reasoning frameworks.</p>
-
-              <p>Prior to Oracle, he served as <strong>Senior Manager and Data Scientist</strong> at <strong>State Street</strong>, where he established and led AI Research and Innovation initiatives focused on accelerating the adoption of Generative AI within the financial services domain. He has also worked with organizations including Landis+Gyr and contributed to research-oriented initiatives through the OSINT Lab at IIT Guwahati.</p>
-
-              <p>Neelesh holds an <strong>M.Tech in Computer Science and Engineering</strong> from <strong>IIT Guwahati</strong>, graduating with Department Rank 1 and a CGPA of 9.7/10. He was also selected for the Government of India's prestigious international master's fellowship program associated with <strong>Heidelberg University, Germany</strong>.</p>
-
-              <h3>Research & Technical Focus</h3>
-              <p>His current areas of research and technical focus include:</p>
-              <ul>
-                <li>Agentic AI Systems and AI Orchestration</li>
-                <li>Retrieval-Augmented Generation (RAG)</li>
-                <li>NL2SQL and Enterprise Knowledge Systems</li>
-                <li>Multimodal and Multilingual AI</li>
-                <li>LLM Evaluation, Safety, and Robustness</li>
-                <li>Document AI and Intelligent PDF Understanding</li>
-                <li>Semantic Search and Context-Aware Retrieval</li>
-                <li>Knowledge Representation and Reusable AI Architectures</li>
-                <li>Conversation Memory and Agentic Memory Systems</li>
-                <li>Deep Learning and Generative AI Systems</li>
-              </ul>
-
-            </section>
-
-            <section id="publications">
-              <h2><i class="fas fa-scroll"></i> Publications</h2>
-
-              <div class="timeline">
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2025</span>
-                    <span class="timeline__role">IndRegBias: A Dataset for Studying Indian Regional Biases in English and Code-Mixed Social Media Comments</span>
-                  </div>
-                  <div class="timeline__company">Debadutta Panda, Aiswarya Anil, <strong>Neelesh K. Shukla</strong></div>
-                  <p class="timeline__desc">arXiv preprint arXiv:2601.06477</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--arxiv" href="https://arxiv.org/abs/2601.06477" target="_blank"><i class="fas fa-external-link-alt"></i> arXiv</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2025</span>
-                    <span class="timeline__role">Ontology-Driven Multimodal Framework for Automated Interpretation and Description of Architecture Diagrams</span>
-                  </div>
-                  <div class="timeline__company">Sakthivel Thangaraj, <strong>Neelesh K. Shukla</strong>, Viji Krishnamurthy</div>
-                  <p class="timeline__desc">IEEE Big Data 2025</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--doi" href="https://ieeexplore.ieee.org/document/11402186" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2025</span>
-                    <span class="timeline__role">RAG-CUE: Actionable and Unified Evaluation for Retrieval-Augmented Generation Systems</span>
-                  </div>
-                  <div class="timeline__company">Prabhat Kumar Prabhakar, <strong>Neelesh K. Shukla</strong>, Viji Krishnamurthy</div>
-                  <p class="timeline__desc">IEEE Big Data 2025</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--doi" href="https://ieeexplore.ieee.org/abstract/document/11401780" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2025</span>
-                    <span class="timeline__role">GraphRAG Analysis for Financial Narrative Summarization and A Framework for Optimizing Domain Adaptation</span>
-                  </div>
-                  <div class="timeline__company"><strong>Neelesh Kumar Shukla</strong>, Prabhat Prabhakar, Sakthivel Thangaraj, Sandeep Singh, Weiyi Sun, C Prasanna Venkatesan, Viji Krishnamurthy</div>
-                  <p class="timeline__desc">FinNLP/FNP/LLMFinLegal @ ACL 2025</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--pdf" href="https://aclanthology.org/2025.finnlp-1.2/" target="_blank"><i class="fas fa-external-link-alt"></i> ACL Anthology</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2025</span>
-                    <span class="timeline__role">KULFi Framework: Knowledge Utilization for Optimizing Large Language Models for Financial Causal Reasoning</span>
-                  </div>
-                  <div class="timeline__company"><strong>Neelesh Kumar Shukla</strong>, Sandeep Singh, Prabhat Kumar Prabhakar, Sakthivel Thangaraj, Weiyi Sun, C Prasanna Venkatesan, Viji Krishnamurthy</div>
-                  <p class="timeline__desc">FinNLP/FNP/LLMFinLegal @ ACL 2025</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--pdf" href="https://aclanthology.org/2025.finnlp-1.22/" target="_blank"><i class="fas fa-external-link-alt"></i> ACL Anthology</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2024</span>
-                    <span class="timeline__role">T2I-RISE: Text-to-Insights with Reinforcement learning, Integration of Semantic layers and Enrichment</span>
-                  </div>
-                  <div class="timeline__company">Raghu Katikeri, Sai Phaniraja, Sai Pratheek, Rajvi Desai, Amit Vaid, <strong>Neelesh K. Shukla</strong>, Sandeep Jain</div>
-                  <p class="timeline__desc">IEEE Big Data 2024</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--doi" href="https://ieeexplore.ieee.org/document/10825844" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2023</span>
-                    <span class="timeline__role">Investigating Large Language Models for Financial Causality Detection in Multilingual Setup</span>
-                  </div>
-                  <div class="timeline__company"><strong>Neelesh K. Shukla</strong>, Raghu Katikeri, Msp Raja, Gowtham Sivam, Shlok Yadav, Amit Vaid, Shreenivas Prabhakararao</div>
-                  <p class="timeline__desc">IEEE Big Data 2023</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--doi" href="https://ieeexplore.ieee.org/document/10386558" target="_blank"><i class="fas fa-external-link-alt"></i> IEEE</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2023</span>
-                    <span class="timeline__role">Generative AI Approach to Distributed Summarization of Financial Narratives</span>
-                  </div>
-                  <div class="timeline__company"><strong>Neelesh K. Shukla</strong>, Raghu Katikeri, Msp Raja, Gowtham Sivam, Shlok Yadav, Amit Vaid, Shreenivas Prabhakararao</div>
-                  <p class="timeline__desc">IEEE Big Data 2023</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--doi" href="https://doi.org/10.1109/BigData59044.2023.10386797" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2022</span>
-                    <span class="timeline__role">DoSA : A System to Accelerate Annotations on Business Documents with Human-in-the-Loop</span>
-                  </div>
-                  <div class="timeline__company"><strong>Neelesh K. Shukla</strong>, Msp Raja, Raghu Katikeri, Amit Vaid</div>
-                  <p class="timeline__desc">CoRR abs/2211.04934</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--pdf" href="https://aclanthology.org/2022.dash-1.4/" target="_blank"><i class="fas fa-external-link-alt"></i> ACL Anthology</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2022</span>
-                    <span class="timeline__role">DiMSum: Distributed and Multilingual Summarization of Financial Narratives</span>
-                  </div>
-                  <div class="timeline__company"><strong>Neelesh K. Shukla</strong>, Amit Vaid, Raghu C Katikeri, Sangeeth Keeriyadath, Msp Raja</div>
-                  <p class="timeline__desc">Proceedings of FNP 2022</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--pdf" href="https://aclanthology.org/2022.fnp-1.9/" target="_blank"><i class="fas fa-external-link-alt"></i> ACL Anthology</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2020</span>
-                    <span class="timeline__role">Improving Text-Code Pair Quality Using Function Calls and API Documentation</span>
-                  </div>
-                  <div class="timeline__company"><strong>Neelesh K. Shukla</strong> et al.</div>
-                  <p class="timeline__desc">Mining Software Repositories (MSR) 2020 (Short Paper)</p>
-                </div>
-              </div>
-
-              <p class="text-sm" style="margin-top: 1rem;">
-                <a href="https://scholar.google.com/citations?user=MgafX3kAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> View all on Google Scholar</a>
-                &nbsp;&middot;&nbsp;
-                <a href="https://dblp.org/pid/333/1143" target="_blank"><i class="fas fa-database"></i> DBLP</a>
-                &nbsp;&middot;&nbsp;
-                <a href="https://aclanthology.org/people/neelesh-kumar-shukla/" target="_blank"><i class="fas fa-book"></i> ACL Anthology</a>
-              </p>
-            </section>
-
-            <section id="patents">
-              <h2><i class="fas fa-crown"></i> Patents</h2>
-
-              <div class="timeline">
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2020</span>
-                    <span class="timeline__role">Generating a Recommended Shaping Function to Integrate Data Within a Data Repository</span>
-                  </div>
-                  <div class="timeline__company">M Bhide, S Gudla, S Mehta, P Rateria, S Shaikh, <strong>NK Shukla</strong>, PS Taylor &mdash; Oracle International Corporation</div>
-                  <p class="timeline__desc">US Patent 10,783,161</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--uspto" href="https://patents.justia.com/patent/10783161" target="_blank"><i class="fas fa-file-alt"></i> US Patent</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2025</span>
-                    <span class="timeline__role">Staggered-Sampling Technique for Detecting Sensor Anomalies in a Dynamic Univariate Time-Series Signal</span>
-                  </div>
-                  <div class="timeline__company"><strong>Neelesh K. Shukla</strong>, Suresh Kumar Golconda, Vijayalakshmi Krishnamurthy et al. &mdash; Oracle International Corporation</div>
-                  <p class="timeline__desc">US Patent 12,260,304</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--uspto" href="https://patents.justia.com/patent/12260304" target="_blank"><i class="fas fa-file-alt"></i> US Patent</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2024</span>
-                    <span class="timeline__role">Hyper Parameter Tuning for Machine Learning Models</span>
-                  </div>
-                  <div class="timeline__company"><strong>Neelesh K. Shukla</strong>, Suresh Kumar Golconda, Vijayalakshmi Krishnamurthy et al. &mdash; Oracle International Corporation</div>
-                  <p class="timeline__desc">US Patent 12,086,725</p>
-                  <div class="link-pills">
-                    <a class="link-pill pill--uspto" href="https://patents.justia.com/patent/12086725" target="_blank"><i class="fas fa-file-alt"></i> US Patent</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section id="talks">
-              <h2><i class="fas fa-microphone"></i> Talks</h2>
-
-              <div class="timeline">
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2024</span>
-                    <span class="timeline__role">Investigation of LLMs for Financial Use Cases</span>
-                  </div>
-                  <div class="timeline__company">NLP Summit 2024</div>
-                  <div class="link-pills">
-                    <a class="link-pill pill--doi" href="https://www.nlpsummit.org/investigation-of-llms-for-financial-use-cases/" target="_blank"><i class="fas fa-external-link-alt"></i> Talk Page</a>
-                  </div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">2022</span>
-                    <span class="timeline__role">Challenges in Financial Document Understanding &mdash; NLP and Beyond</span>
-                  </div>
-                  <div class="timeline__company">NLP Summit 2022 (Virtual)</div>
-                  <div class="link-pills">
-                    <a class="link-pill pill--doi" href="https://www.nlpsummit.org/challenges-in-financial-document-understanding-nlp-and-beyond/" target="_blank"><i class="fas fa-external-link-alt"></i> Talk Page</a>
-                    <a class="link-pill pill--pdf" href="https://www.linkedin.com/posts/neeleshshukla_nlpsummit-activity-6960947017321734146-fsVx" target="_blank"><i class="fab fa-linkedin"></i> Announcement</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section id="projects">
-              <h2><i class="fas fa-code"></i> Projects</h2>
-
-              <div class="timeline">
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__role">Investigating LLMs for Financial Causality Detection</span>
-                  </div>
-                  <p class="timeline__desc">Research paper published at IEEE Big Data 2023. Investigated Large Language Models for financial causality detection in multilingual setup, exploring how LLMs can identify causal relationships in financial texts across languages.</p>
-                  <a class="project-link" href="https://github.com/neeleshkshukla/Investigating_LLM_Financial_Causality" target="_blank"><i class="fab fa-github"></i> Code</a>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__role">DoSA &mdash; Document Annotation System</span>
-                  </div>
-                  <p class="timeline__desc">A system to accelerate annotations on business documents with human-in-the-loop. Combines ML predictions with human validation to speed up the annotation process for business documents.</p>
-                  <a class="project-link" href="https://github.com/neeleshkshukla/DoSA" target="_blank"><i class="fab fa-github"></i> Code</a>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__role">DiMSum &mdash; Distributed Summarization of Financial Narratives</span>
-                  </div>
-                  <p class="timeline__desc">Published at FNP 2022. A distributed and multilingual approach to summarizing financial narratives using generative AI.</p>
-                  <a class="project-link" href="https://github.com/neeleshkshukla/DiMSum_FNP_2022" target="_blank"><i class="fab fa-github"></i> Code</a>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__role">Entity Role Detection in Attack Events</span>
-                  </div>
-                  <p class="timeline__desc">M.Tech thesis at IIT Guwahati. Studied methods for identifying the roles of entities in terrorist attack news articles using state-of-the-art NLP techniques.</p>
-                  <a class="project-link" href="https://github.com/neeleshkshukla/Entity-Role-Detection-MTP" target="_blank"><i class="fab fa-github"></i> Code</a>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__role">Text-Code Pair Generation</span>
-                  </div>
-                  <p class="timeline__desc">Mining Software Repositories 2020. Used function calls and API documentation to identify relevant code elements, reducing irrelevant ones and improving text-code pair quality.</p>
-                  <a class="project-link" href="https://github.com/neeleshkshukla/Text-Code-Pair-Combininng-StackOverflow-API-Docs" target="_blank"><i class="fab fa-github"></i> Code</a>
-                </div>
-              </div>
-            </section>
-
-            <section id="experience">
-              <h2><i class="fas fa-briefcase"></i> Experience</h2>
-
-              <div class="timeline">
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">Jun 2018 &ndash; Present</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">Principal Applied Scientist / Applied Sciences Lead &mdash; GenAI &amp; Advanced AI</span>
-                  </div>
-                  <div class="timeline__company">Oracle</div>
-                  <p class="timeline__desc">As part of the central AI team, develops GenAI/Advanced AI products and features while conducting research to bridge scientific gaps. Leads research initiatives, NL2SQL reusable solutions, and drives adoption by integrating research findings back into products. Earlier, as Senior Data Scientist (SMTS), built an Automated Machine Learning Cloud Platform, owned IoT Analytics offerings (predictive analytics, time series, anomaly detection), initiated research collaborations with Oracle Research Labs, and built end-to-end data science pipelines on Spark and Big Data ecosystems.</p>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">Oct 2021 &ndash; Jun 2024</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">Senior Manager, AI Group &amp; Head &mdash; AI Innovation &amp; Research</span>
-                  </div>
-                  <div class="timeline__company">State Street</div>
-                  <p class="timeline__desc">Incubated and led the AI Innovation &amp; Research Group, driving NLP and GenAI research for financial applications. Published four impactful research papers in two years. Led adoption of GenAI solutions in the State Street Alpha Data Platform for investment management. Contributed to Financial Document Intelligence, QA, Summarization, and Extraction projects.</p>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">Jan 2018 &ndash; Mar 2018</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">Visiting Research Fellow &mdash; PVS Lab, Heidelberg University</span>
-                  </div>
-                  <div class="timeline__company">University of Heidelberg</div>
-                  <p class="timeline__desc">Received invitation via Govt of India's Visiting Masters Research Fellow program. Worked under Prof. Dr. Artur Andrzejak, head of Parallel and Distributed Systems Group, on code snippet extraction and related research.</p>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">May 2017 &ndash; Jul 2017</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">Research Intern @ IBM Research/Software Labs</span>
-                  </div>
-                  <div class="timeline__company">IBM</div>
-                  <p class="timeline__desc">Enhanced the IBM Watson Data Platform with cognitive support features for advanced data analytics. Developed methods for Shaping Function and Next Action Recommendation using data mining, language modeling, and deep learning. Conducted comparative studies to evaluate different approaches.</p>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">Oct 2014 &ndash; Jul 2016</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">Senior Software Engineer &mdash; Consert, Intelligent Energy Management Product</span>
-                  </div>
-                  <div class="timeline__company">Landis+Gyr (A Toshiba Group Company)</div>
-                  <p class="timeline__desc">Part of the team developing an IoT-based Intelligent Energy management product. Owned Text search, Load forecasting ML, Forecast UI, and Application Backend. Led a team of 6 including engineers and business analysts. Engaged with customers and architects on end-to-end solution design.</p>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">Jun 2012 &ndash; Oct 2014</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">Product Developer &mdash; Celeriti, Banking Product</span>
-                  </div>
-                  <div class="timeline__company">DXC Technology</div>
-                  <p class="timeline__desc">Engineered the middleware layer for Accounts and Cards modules of the Celeriti Banking Product.</p>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">Dec 2009 &ndash; Jun 2012</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">Systems Engineer</span>
-                  </div>
-                  <div class="timeline__company">Tata Consultancy Services</div>
-                  <p class="timeline__desc">Led middleware and workflow development for Global Procurement System, GSPEED (employee performance evaluation), and Global Recruitment System. Managed a 7-member team. Designed and architected the Vendor Management System (<a href="https://vms.tcs.com/" target="_blank">vms.tcs.com</a>).</p>
-                </div>
-
-              </div>
-            </section>
-
-            <section id="education">
-              <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-
-              <div class="timeline">
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__role">M.Tech in Computer Science &amp; Engineering</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__date">Department Rank 1 &middot; CGPA 9.7/10</span>
-                  </div>
-                  <div class="timeline__company">Indian Institute of Technology (IIT) Guwahati</div>
-                  <p class="timeline__desc">Thesis: "A Study on Entity Role Detection" in attack events &middot; Open Source Intelligence Group &middot; Dr. S. Ranbir Singh</p>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__role">Research Fellowship &mdash; Scientific Winter School</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__date">Govt of India Fellowship</span>
-                  </div>
-                  <div class="timeline__company">Heidelberg University, Germany</div>
-                  <p class="timeline__desc">Govt of India Masters' Fellowship Program &middot; Collaborated with Prof. Andrezejak on code snippet extraction &middot; Selected for PhD position</p>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__role">B.Tech in Computer Science</span>
-                  </div>
-                  <div class="timeline__company">Madan Mohan Malaviya Engineering College (MMMEC)</div>
-                </div>
-              </div>
-            </section>
-
-            <section id="honors">
-              <h2><i class="fas fa-trophy"></i> Honors &amp; Awards</h2>
-
-              <div class="timeline">
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">Nov 2023</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">Best Work &mdash; Financial Narrative Summarization Task</span>
-                  </div>
-                  <div class="timeline__company">FNP Workshop, IEEE BigData Conference 2023</div>
-                  <p class="timeline__desc">Top-ranked system outperforming all competing approaches.</p>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">Oct 2022</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">Standing Ovation &mdash; Top Employee Award</span>
-                  </div>
-                  <div class="timeline__company">State Street</div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">Apr 2022</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">2nd Best Work &mdash; Financial Narrative Summarization Task</span>
-                  </div>
-                  <div class="timeline__company">FNP Workshop, LREC 2022</div>
-                  <p class="timeline__desc">Ranked 2nd/3rd across all languages and 1st in Greek. <a href="http://wp.lancs.ac.uk/cfie/fns2022/" target="_blank">wp.lancs.ac.uk/cfie/fns2022/</a></p>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">Jul 2018</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">Joint Ph.D. Position Offer</span>
-                  </div>
-                  <div class="timeline__company">IIT Guwahati &mdash; Heidelberg University, Germany</div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">Jan 2018</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">Joint Research Fellowship</span>
-                  </div>
-                  <div class="timeline__company">Dept. of Biotechnology, Govt. of India &mdash; Heidelberg University, Germany</div>
-                </div>
-
-                <div class="timeline__item">
-                  <div class="timeline__meta">
-                    <span class="timeline__date">Jan 2018</span>
-                    <span class="timeline__sep">&middot;</span>
-                    <span class="timeline__role">Rank 1 &mdash; M.Tech Computer Science &amp; Engineering (CGPA 9.7/10)</span>
-                  </div>
-                  <div class="timeline__company">Indian Institute of Technology (IIT) Guwahati</div>
-                </div>
-              </div>
-            </section>
-          </section>
-        </div>
-      </article>
-    </div>
-
-    <div id="footer" class="page__footer">
-      <footer>
-        <div class="page__footer-follow">
-          <ul class="social-icons">
-            <li><strong>Follow:</strong></li>
-            <li><a href="https://github.com/neeleshkshukla" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/neeleshshukla" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://x.com/neeleshkshukla" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
-          </ul>
-        </div>
-        <div class="page__footer-copyright">
-          &copy; 2026 Neelesh K Shukla. Powered by GitHub Pages.
-        </div>
-      </footer>
-    </div>
+    </footer>
 
     <script>
-      // Theme toggle
-      (function() {
-        var btn = document.getElementById('theme-toggle');
-        if (!btn) return;
-        var setIcon = function() {
-          var dark = document.documentElement.classList.contains('theme-dark');
-          btn.textContent = dark ? '\u2600\uFE0F' : '\uD83C\uDF19';
-          btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
-        };
-        btn.addEventListener('click', function() {
-          document.documentElement.classList.toggle('theme-dark');
-          var dark = document.documentElement.classList.contains('theme-dark');
-          try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch(e) {}
-          setIcon();
-        });
-        setIcon();
-      })();
-
-      // Follow button dropdown
-      (function() {
-        var btn = document.getElementById('follow-btn');
-        var menu = document.getElementById('follow-menu');
-        if (btn && menu) {
-          btn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            menu.classList.toggle('open');
-            btn.classList.toggle('open');
-          });
-          document.addEventListener('click', function() {
-            menu.classList.remove('open');
-            btn.classList.remove('open');
-          });
-          menu.addEventListener('click', function(e) { e.stopPropagation(); });
-        }
-      })();
-
-      // Sticky masthead shadow
-      (function() {
-        var h = document.querySelector('.masthead');
-        if (!h) return;
-        var on = function() { h.classList.toggle('is-stuck', window.scrollY > 8); };
-        on();
-        window.addEventListener('scroll', on, { passive: true });
-      })();
-
-      // Simple search filtering
-      (function() {
-        var input = document.getElementById('search-input');
-        var results = document.getElementById('search-results');
-        if (!input) return;
-        var sections = document.querySelectorAll('.page__content section');
-        var items = [];
-        sections.forEach(function(s) {
-          var id = s.id;
-          var title = s.querySelector('h2');
-          if (title) items.push({ id: id, title: title.textContent });
-        });
-        input.addEventListener('input', function() {
-          var q = this.value.toLowerCase().trim();
-          if (!q) { results.innerHTML = ''; return; }
-          var matches = items.filter(function(item) {
-            return item.title.toLowerCase().includes(q);
-          });
-          if (matches.length === 0) {
-            results.innerHTML = '<p>No results found.</p>';
-          } else {
-            results.innerHTML = '<ul>' + matches.map(function(m) {
-              return '<li><a href="#' + m.id + '">' + m.title + '</a></li>';
-            }).join('') + '</ul>';
+      document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+        a.addEventListener('click', function(e) {
+          var target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }
         });
+      });
+
+      (function() {
+        var toggle = document.getElementById('themeToggle');
+        var icon = toggle.querySelector('i');
+        var stored = localStorage.getItem('theme');
+        if (stored === 'dark') {
+          document.documentElement.removeAttribute('data-theme');
+          icon.className = 'fas fa-moon';
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+          icon.className = 'fas fa-sun';
+        }
+        toggle.addEventListener('click', function() {
+          var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+          if (isLight) {
+            document.documentElement.removeAttribute('data-theme');
+            icon.className = 'fas fa-moon';
+            localStorage.setItem('theme', 'dark');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            icon.className = 'fas fa-sun';
+            localStorage.setItem('theme', 'light');
+          }
+        });
+      })();
+
+      document.getElementById('updateDate').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+
+      (function() {
+        var canvas = document.getElementById('hero-canvas');
+        if (!canvas) return;
+        var ctx = canvas.getContext('2d');
+        var W, H;
+        var NUM = 55;
+        var CONN_DIST = 160;
+        var pts = [];
+
+        function resize() {
+          var rect = canvas.parentElement.getBoundingClientRect();
+          canvas.width = rect.width;
+          canvas.height = rect.height;
+          W = rect.width;
+          H = rect.height;
+        }
+
+        function draw() {
+          ctx.clearRect(0, 0, W, H);
+          for (var i = 0; i < NUM; i++) {
+            for (var j = i + 1; j < NUM; j++) {
+              var dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
+              var dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < CONN_DIST) {
+                var alpha = (1 - dist / CONN_DIST) * 0.35;
+                ctx.beginPath();
+                ctx.moveTo(pts[i].x, pts[i].y);
+                ctx.lineTo(pts[j].x, pts[j].y);
+                ctx.strokeStyle = 'rgba(148,163,184,' + alpha + ')';
+                ctx.lineWidth = 0.8;
+                ctx.stroke();
+              }
+            }
+          }
+          for (var i = 0; i < NUM; i++) {
+            ctx.beginPath();
+            ctx.arc(pts[i].x, pts[i].y, 2, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(59,130,246,0.5)';
+            ctx.fill();
+          }
+        }
+
+        function init() {
+          resize();
+          pts = [];
+          for (var i = 0; i < NUM; i++) {
+            pts.push({ x: Math.random() * W, y: Math.random() * H });
+          }
+          draw();
+        }
+
+        window.addEventListener('resize', init);
+        init();
       })();
     </script>
   </body>
