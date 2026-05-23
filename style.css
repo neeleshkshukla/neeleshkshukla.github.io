@@ -417,13 +417,34 @@ img { max-width: 100%; display: block; }
 .topic__tag--feedback { background: rgba(251,191,36,0.12); color: #fbbf24; }
 
 /* ============ BIO ============ */
+.bio {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  position: relative;
+}
+.bio::before {
+  content: '\201C';
+  position: absolute;
+  top: 0.25rem;
+  left: 0.75rem;
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.15;
+  font-family: Georgia, serif;
+  pointer-events: none;
+}
 .bio p {
   font-size: 0.9rem;
   color: var(--text-light);
-  line-height: 1.75;
-  margin-bottom: 1rem;
+  line-height: 1.8;
+  margin-bottom: 0.85rem;
+  text-align: justify;
 }
 .bio p:last-child { margin-bottom: 0; }
+.bio p:first-of-type { margin-top: 0.5rem; }
 
 /* ============ SYSTEMS GRID ============ */
 .systems-grid {
