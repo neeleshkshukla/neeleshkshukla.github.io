@@ -524,20 +524,29 @@ img { max-width: 100%; display: block; }
 }
 .pub-item__links a:hover { background: rgba(100,140,255,0.18); }
 
-.pub-footer {
-  margin-top: 1.25rem;
+.pub-profiles {
   display: flex;
-  gap: 1.25rem;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
   flex-wrap: wrap;
 }
-.pub-footer a {
-  font-size: 0.82rem;
-  color: var(--text-lighter);
+.pub-profile {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-light);
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.35rem;
+  transition: border-color 0.2s, color 0.2s;
 }
-.pub-footer a:hover { color: var(--accent); }
+.pub-profile:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
 
 /* ============ EDUCATION ============ */
 .edu-grid {
