@@ -95,14 +95,16 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 2rem;
 }
 .nav__logo {
   font-weight: 800;
   font-size: 1rem;
   color: var(--text);
   letter-spacing: 0.05em;
+  white-space: nowrap;
 }
-.nav__links { display: flex; gap: 1.5rem; }
+.nav__links { display: flex; gap: 1.5rem; align-items: center; }
 .nav__links a {
   font-size: 0.82rem;
   font-weight: 500;
